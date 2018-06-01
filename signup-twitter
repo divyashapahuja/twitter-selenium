@@ -4,6 +4,7 @@ from selenium.webdriver.common.keys import Keys
 browser=webdriver.Chrome('C:\Users\Administrator\Downloads\chromedriver_win32\chromedriver.exe')
 browser.get("https://twitter.com")
 
+def signup():
     sup=browser.find_element_by_class_name('StaticLoggedOutHomePage-buttonSignup')
     sup.click()
     browser.get("https://twitter.com/i/flow/signup")
@@ -30,3 +31,7 @@ browser.get("https://twitter.com")
     nxt2.click()
 
     browser.get("http://www.twitter.com")
+
+if __name__ == "__main__":
+    
+    signup()
