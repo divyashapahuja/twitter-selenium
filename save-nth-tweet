@@ -1,0 +1,7 @@
+def save_tweet(n):
+    tweet_list=browser.find_elements_by_css_selector('p.tweet-text')
+    f=open("tweets.txt","w")
+    f.write("%s\n\n" %tweet_list[n].text)
+    
+if __name__ == "__main__":
+    save_tweet(2)
