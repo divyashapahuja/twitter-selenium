@@ -1,0 +1,32 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+browser=webdriver.Chrome('C:\Users\Administrator\Downloads\chromedriver_win32\chromedriver.exe')
+browser.get("https://twitter.com")
+
+    sup=browser.find_element_by_class_name('StaticLoggedOutHomePage-buttonSignup')
+    sup.click()
+    browser.get("https://twitter.com/i/flow/signup")
+    
+    uname=browser.find_element_by_xpath('//*[@id="react-root"]/div[2]/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/input')
+    uname.send_keys(input("Your name: "))
+    
+    use_email=browser.find_element_by_xpath('//*[@id="react-root"]/div[2]/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div[4]')
+    use_email.click()
+
+    em=browser.find_element_by_name("email")
+    em.send_keys(input("Enter email ID: "))
+
+    nxt=browser.find_element_by_xpath('//*[@id="react-root"]/div[2]/div/div/div/div[2]/div[2]/div/div/div[2]/div[1]/div/div/div/div[3]/div')
+    nxt.click()
+
+    sigup=browser.find_element_by_xpath('//*[@id="react-root"]/div[2]/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[5]')
+    signup.click()
+
+    pwd=browser.find_element_by_name("password")
+    pwd.send_keys(input("Enter password: "))
+
+    nxt2=browser.find_element_by-xpath('//*[@id="react-root"]/div/main/div/div/div/div[2]/div[1]/div/div/div/div[3]/div/div')
+    nxt2.click()
+
+    browser.get("http://www.twitter.com")
