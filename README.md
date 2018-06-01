@@ -1,2 +1,5 @@
 # twitter-selenium
-Login twitter using Selenium with Python.
+Signup on twitter
+Login twitter
+Save tweets in a file
+All using Selenium with Python.
